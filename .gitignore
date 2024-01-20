@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+lambda/node_modules
+lambda/yarn.lock
+lambda/.serverless/
+.env
+cdk.out/
+.idea/
+yarn.lock
+package-lock.json
+lambda/yarn.lock
+lambda/package-lock.json
