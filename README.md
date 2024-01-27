@@ -34,7 +34,7 @@ Before using this project, make sure you have the following prerequisites:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/iam-role-delegation.git
+   git clone https://github.com/karmakarsagar37/iam-role-delegation.git
    cd iam-role-delegation
    ```
 
