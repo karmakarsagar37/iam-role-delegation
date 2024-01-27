@@ -5,7 +5,7 @@ const AWS = require('aws-sdk');
 // Sample Lambda code to test the IAM Role Delegation. In the stack we gave the IAM role permission to access the list of executions for a particular step function
 module.exports.handler = async (event, context) => {
     // Define parameters to assume the role in the consumer account
-    const ConsumerRoleParams = {
+    const consumerRoleParams = {
         RoleArn: `${process.env.CLIENT_ROLE_ARN}`,
         RoleSessionName: 'Consumer-Session',
         ExternalId: `${process.env.EXTERNAL_ID}`
@@ -16,7 +16,7 @@ module.exports.handler = async (event, context) => {
 
     try {
         // Assume the specified role in the consumer account using STS
-        const assumedRole = await sts.assumeRole(ConsumerRoleParams).promise();
+        const assumedRole = await sts.assumeRole(consumerRoleParams).promise();
 
         // Log the assumed role's credentials to the console
         console.log(assumedRole.Credentials);
