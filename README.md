@@ -2,6 +2,9 @@
 
 IAM Role Delegation is a project that facilitates cross-account access to AWS resources from one AWS Account to other AWS Account. It leverages AWS Identity and Access Management (IAM) roles to allow a Consumer AWS Account to access resources in a Client AWS Account.
 
+## Architecture Diagram
+![Architecture Diagram](assets/CrossAccountAccess.png)
+
 ## Table of Contents
 
 - [Overview](#overview)
